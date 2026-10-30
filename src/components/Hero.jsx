@@ -97,9 +97,9 @@ export default function Hero() {
   const [serviceError, setServiceError] = useState(false);
 
   const serviceOptions = [
-    { value: "stairwell", label: t.hero.services.stairwell },
-    { value: "common", label: t.hero.services.common },
-    { value: "windows", label: t.hero.services.windows },
+    { value: "sofas", label: t.hero.services.sofas },
+    { value: "mattresses", label: t.hero.services.mattresses },
+    { value: "chairs", label: t.hero.services.chairs },
   ];
 
   const handleSubmit = (e) => {
@@ -120,11 +120,11 @@ export default function Hero() {
         <picture>
           <source
             media="(max-width: 768px)"
-            srcSet="/images/kolibri-banner-mobile-768x1024.webp"
+            srcSet="/images/hero-banner-mobile-768x1024.webp"
           />
           <img
             className="hero-image"
-            src="/images/kolibri-banner-1920x800.webp"
+            src="/images/hero-banner-1920x800.webp"
             alt=""
             width="1920"
             height="800"

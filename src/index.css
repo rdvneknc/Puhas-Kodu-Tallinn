@@ -1,5 +1,5 @@
 /* ============================================
-   Kolibri Koristusteenused — Design system
+   Puhas Kodu Tallinn — Design system
    ============================================ */
 
 :root {
@@ -220,13 +220,45 @@ select {
   cursor: pointer;
 }
 
-.logo-img {
-  height: 62px;
-  width: auto;
-  max-width: min(300px, 62vw);
+.logo-wordmark {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 1;
+  color: var(--blue);
+  user-select: none;
+}
+
+.logo-line {
   display: block;
-  object-fit: contain;
-  pointer-events: none;
+}
+
+.logo-line--brand {
+  font-size: 1.55rem;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+}
+
+.logo-p {
+  font-size: 1.85rem;
+  font-weight: 800;
+}
+
+.logo-line--kodu {
+  font-size: 1.05rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: lowercase;
+  margin-top: 0.05rem;
+}
+
+.logo-line--city {
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  margin-top: 0.2rem;
+  opacity: 0.9;
 }
 
 .nav {
@@ -1168,7 +1200,6 @@ select {
 
   .contact-layout,
   .about-page-intro,
-  .pricing-grid,
   .team-grid,
   .values-grid,
   .faq-grid {
@@ -1522,76 +1553,118 @@ select {
   background: var(--blue);
 }
 
-.pricing-grid {
+.price-list {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.25rem;
-  align-items: stretch;
+  gap: 2rem;
 }
 
-.price-card {
-  position: relative;
+.price-category {
   border: 1.5px solid var(--border);
   border-radius: 18px;
-  padding: 1.75rem 1.5rem;
+  padding: 1.5rem 1.35rem 1.35rem;
   background: var(--white);
+}
+
+.price-category-head {
   display: flex;
-  flex-direction: column;
-  transition: border-color 0.25s var(--ease), box-shadow 0.25s var(--ease);
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.15rem;
+  flex-wrap: wrap;
 }
 
-@media (hover: hover) and (pointer: fine) {
-  .price-card:hover {
-    border-color: var(--blue);
-    box-shadow: 0 12px 32px rgba(1, 114, 165, 0.1);
-  }
-
-  .price-card:hover .btn-outline {
-    background: var(--blue);
-    color: var(--white);
-    border-color: var(--blue);
-  }
-}
-
-.price-card h2 {
-  font-size: 1.25rem;
-  font-weight: 800;
-  margin-bottom: 0.35rem;
-}
-
-.price-note {
-  color: var(--text-muted);
-  font-weight: 500;
-  font-size: 0.9rem;
-  margin-bottom: 1rem;
-}
-
-.price-amount {
-  display: flex;
-  align-items: baseline;
-  gap: 0.35rem;
-  margin-bottom: 1.25rem;
-}
-
-.price-amount span {
-  font-size: 1.85rem;
+.price-category-head h2 {
+  font-size: clamp(1.35rem, 2.2vw, 1.7rem);
   font-weight: 800;
   letter-spacing: -0.03em;
   color: var(--blue);
 }
 
-.price-amount small {
-  color: var(--text-muted);
-  font-weight: 600;
+.price-category-head .btn {
+  padding: 0.65rem 1rem;
+  font-size: 0.88rem;
 }
 
-.price-card .btn {
-  margin-top: auto;
+.price-table-wrap {
+  overflow-x: auto;
+}
+
+.price-table {
   width: 100%;
+  border-collapse: collapse;
+  min-width: 420px;
+}
+
+.price-table--single {
+  min-width: 280px;
+}
+
+.price-table th,
+.price-table td {
+  padding: 0.85rem 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid var(--border);
+  vertical-align: middle;
+}
+
+.price-table thead th {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.price-table tbody th {
+  font-weight: 700;
+  color: var(--text);
+}
+
+.price-table td {
+  font-weight: 700;
+  color: var(--blue);
+  white-space: nowrap;
+}
+
+.price-table tbody tr:last-child th,
+.price-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.pricing-warning {
+  display: flex;
+  gap: 0.85rem;
+  align-items: flex-start;
+  padding: 1.15rem 1.25rem;
+  border-radius: var(--radius);
+  background: #fff5f5;
+  border: 1px solid #f3c7c7;
+}
+
+.pricing-warning-mark {
+  flex-shrink: 0;
+  width: 1.55rem;
+  height: 1.55rem;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #e25555;
+  color: var(--white);
+  font-weight: 800;
+  font-size: 0.95rem;
+  line-height: 1;
+}
+
+.pricing-warning p {
+  color: #7a3030;
+  font-weight: 600;
+  font-size: 0.95rem;
+  line-height: 1.5;
 }
 
 .pricing-footnote {
-  margin-top: 2rem;
   padding: 1.25rem 1.4rem;
   background: #f3f8fb;
   border-radius: var(--radius);
@@ -1602,6 +1675,12 @@ select {
   font-weight: 500;
   font-size: 0.95rem;
   line-height: 1.55;
+}
+
+@media (max-width: 720px) {
+  .price-category-head .btn {
+    width: 100%;
+  }
 }
 
 .contact-section {

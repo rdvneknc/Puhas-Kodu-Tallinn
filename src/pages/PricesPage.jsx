@@ -11,26 +11,46 @@ export default function PricesPage() {
       <PageHero eyebrow={p.eyebrow} title={p.title} subtitle={p.subtitle} />
 
       <section className="page-section">
-        <div className="container">
-          <div className="pricing-grid">
-            {p.plans.map((plan) => (
-              <article className="price-card" key={plan.id}>
-                <h2>{plan.name}</h2>
-                <p className="price-note">{plan.note}</p>
-                <p className="price-amount">
-                  <span>{plan.price}</span>
-                  {plan.period ? <small>{plan.period}</small> : null}
-                </p>
-                <ul className="check-list">
-                  {plan.features.map((feature) => (
-                    <li key={feature}>{feature}</li>
-                  ))}
-                </ul>
+        <div className="container price-list">
+          {p.categories.map((category) => (
+            <article className="price-category" key={category.id} id={category.id}>
+              <div className="price-category-head">
+                <h2>{category.title}</h2>
                 <Link to="/contact" className="btn btn-outline">
                   {t.common.requestQuote}
                 </Link>
-              </article>
-            ))}
+              </div>
+
+              <div className="price-table-wrap">
+                <table className={`price-table${category.singleColumn ? " price-table--single" : ""}`}>
+                  <thead>
+                    <tr>
+                      <th scope="col" className="price-table-item">
+                        &nbsp;
+                      </th>
+                      <th scope="col">{category.colA || ""}</th>
+                      {!category.singleColumn ? <th scope="col">{category.colB}</th> : null}
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {category.rows.map((row) => (
+                      <tr key={row.item}>
+                        <th scope="row">{row.item}</th>
+                        <td>{row.a}</td>
+                        {!category.singleColumn ? <td>{row.b}</td> : null}
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </article>
+          ))}
+
+          <div className="pricing-warning" role="note">
+            <span className="pricing-warning-mark" aria-hidden="true">
+              !
+            </span>
+            <p>{p.warning}</p>
           </div>
 
           <div className="pricing-footnote">

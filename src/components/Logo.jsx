@@ -5,17 +5,17 @@ export default function Logo({ className = "" }) {
     <Link
       to="/"
       className={`logo ${className}`.trim()}
-      aria-label="Kolibri Koristusteenused home"
-      title="Kolibri Koristusteenused"
+      aria-label="Puhas Kodu Tallinn home"
+      title="Puhas Kodu Tallinn"
     >
-      <img
-        className="logo-img"
-        src="/images/Kolibri koristusteenuste logo.jpg"
-        alt="Kolibri Koristusteenused"
-        width="280"
-        height="62"
-        draggable="false"
-      />
+      <span className="logo-wordmark" aria-hidden="true">
+        <span className="logo-line logo-line--brand">
+          <span className="logo-p">P</span>uhas
+        </span>
+        <span className="logo-line logo-line--kodu">kodu</span>
+        <span className="logo-line logo-line--city">Tallinn</span>
+      </span>
+      <span className="sr-only">Puhas Kodu Tallinn</span>
     </Link>
   );
 }

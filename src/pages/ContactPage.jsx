@@ -26,8 +26,8 @@ export default function ContactPage() {
   const contactItems = [
     {
       label: c.email,
-      value: "info@kolibrikoristus.ee",
-      href: "mailto:info@kolibrikoristus.ee",
+      value: "info@puhaskodu.ee",
+      href: "mailto:info@puhaskodu.ee",
       icon: (
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
           <rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" strokeWidth="2" />
@@ -76,9 +76,9 @@ export default function ContactPage() {
     e.preventDefault();
     const subject = encodeURIComponent(`Quote request — ${form.service || "cleaning"}`);
     const body = encodeURIComponent(
-      `Hello Kolibri Koristusteenused,\n\nName: ${form.name}\nEmail: ${form.email}\nPhone: ${form.phone}\nService: ${form.service || "—"}\nLocation: ${form.location || "—"}\n\nMessage:\n${form.message || "—"}\n\nThank you.`
+      `Hello Puhas Kodu Tallinn,\n\nName: ${form.name}\nEmail: ${form.email}\nPhone: ${form.phone}\nService: ${form.service || "—"}\nLocation: ${form.location || "—"}\n\nMessage:\n${form.message || "—"}\n\nThank you.`
     );
-    window.location.href = `mailto:info@kolibrikoristus.ee?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:info@puhaskodu.ee?subject=${subject}&body=${body}`;
   };
 
   return (
@@ -153,9 +153,9 @@ export default function ContactPage() {
                     <option value="" disabled>
                       {c.selectService}
                     </option>
-                    <option value="stairwell">{t.hero.services.stairwell}</option>
-                    <option value="common">{t.hero.services.common}</option>
-                    <option value="windows">{t.hero.services.windows}</option>
+                    <option value="sofas">{t.hero.services.sofas}</option>
+                    <option value="mattresses">{t.hero.services.mattresses}</option>
+                    <option value="chairs">{t.hero.services.chairs}</option>
                     <option value="other">{c.other}</option>
                   </select>
                 </div>

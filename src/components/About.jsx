@@ -13,7 +13,7 @@ export default function About() {
           <MediaImage
             className="about-media"
             src={IMAGES.aboutTeam}
-            alt="Kolibri Koristusteenused"
+            alt="Puhas Kodu Tallinn"
           />
           <div className="about-content">
             <p className="eyebrow">{t.homeAbout.eyebrow}</p>
