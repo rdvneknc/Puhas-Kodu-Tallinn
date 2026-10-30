@@ -1,12 +1,12 @@
 /* ============================================
-   Puhas Tuus — Design system
+   Kolibri Koristusteenused — Design system
    ============================================ */
 
 :root {
-  --blue: #0057d9;
-  --blue-dark: #0046b0;
-  --blue-soft: #e8f0fc;
-  --blue-muted: #6b9ae8;
+  --blue: #0172a5;
+  --blue-dark: #015a82;
+  --blue-soft: #e6f4f8;
+  --blue-muted: #5aa3c2;
   --navy: #0b1220;
   --text: #1a2332;
   --text-muted: #5a6577;
@@ -141,7 +141,7 @@ select {
   height: 100%;
   min-height: 180px;
   background:
-    linear-gradient(135deg, #c5d8f5 0%, #a8c4ef 45%, #8eb0e4 100%);
+    linear-gradient(135deg, #c5e2ef 0%, #9ecfe3 45%, #7bb8d4 100%);
   color: var(--white);
   text-align: center;
   position: relative;
@@ -221,9 +221,9 @@ select {
 }
 
 .logo-img {
-  height: 48px;
+  height: 62px;
   width: auto;
-  max-width: min(220px, 52vw);
+  max-width: min(300px, 62vw);
   display: block;
   object-fit: contain;
   pointer-events: none;
@@ -282,7 +282,7 @@ select {
 
 .lang-dropdown-trigger:hover,
 .lang-dropdown.is-open .lang-dropdown-trigger {
-  border-color: #c9d7ec;
+  border-color: #b8d7e6;
   background: var(--white);
 }
 
@@ -407,7 +407,7 @@ select {
   inset: 0;
   overflow: hidden;
   border-radius: 0;
-  background: #163a7a;
+  background: #014f73;
 }
 
 .hero-media picture,
@@ -1270,9 +1270,9 @@ select {
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(ellipse 80% 70% at 85% 20%, rgba(107, 154, 232, 0.35), transparent 55%),
-    radial-gradient(ellipse 60% 50% at 10% 90%, rgba(0, 70, 176, 0.45), transparent 50%),
-    linear-gradient(135deg, #0d2f7a 0%, #0057d9 48%, #1a4a9a 100%);
+    radial-gradient(ellipse 80% 70% at 85% 20%, rgba(90, 163, 194, 0.35), transparent 55%),
+    radial-gradient(ellipse 60% 50% at 10% 90%, rgba(1, 90, 130, 0.45), transparent 50%),
+    linear-gradient(135deg, #064861 0%, #0172a5 48%, #015f8a 100%);
 }
 
 .page-hero-bg::after {
@@ -1300,7 +1300,7 @@ select {
 
 .media-image {
   overflow: hidden;
-  background: #d7e4f7;
+  background: #d4eaf3;
 }
 
 .media-image img {
@@ -1332,7 +1332,7 @@ select {
 }
 
 .page-section--soft {
-  background: #f5f8fd;
+  background: #f3f8fb;
 }
 
 .about-page-intro {
@@ -1543,7 +1543,7 @@ select {
 @media (hover: hover) and (pointer: fine) {
   .price-card:hover {
     border-color: var(--blue);
-    box-shadow: 0 12px 32px rgba(0, 87, 217, 0.1);
+    box-shadow: 0 12px 32px rgba(1, 114, 165, 0.1);
   }
 
   .price-card:hover .btn-outline {
@@ -1593,7 +1593,7 @@ select {
 .pricing-footnote {
   margin-top: 2rem;
   padding: 1.25rem 1.4rem;
-  background: #f5f8fd;
+  background: #f3f8fb;
   border-radius: var(--radius);
 }
 
@@ -1607,7 +1607,7 @@ select {
 .contact-section {
   padding: 4rem 0 5rem;
   background:
-    linear-gradient(180deg, #f4f7fc 0%, #ffffff 55%);
+    linear-gradient(180deg, #f2f7fa 0%, #ffffff 55%);
 }
 
 .contact-layout {
@@ -1691,7 +1691,7 @@ select {
   padding: 1.85rem 1.85rem 1.65rem;
   border-radius: 20px;
   background: var(--white);
-  border: 1px solid rgba(0, 87, 217, 0.08);
+  border: 1px solid rgba(1, 114, 165, 0.08);
   box-shadow:
     0 1px 2px rgba(15, 35, 70, 0.04),
     0 18px 40px rgba(15, 35, 70, 0.06);
@@ -1765,7 +1765,7 @@ select {
 .contact-form textarea:focus {
   border-color: var(--blue);
   background: var(--white);
-  box-shadow: 0 0 0 4px rgba(0, 87, 217, 0.1);
+  box-shadow: 0 0 0 4px rgba(1, 114, 165, 0.1);
 }
 
 .select-wrap {

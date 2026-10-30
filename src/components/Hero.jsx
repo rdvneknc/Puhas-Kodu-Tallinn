@@ -120,11 +120,11 @@ export default function Hero() {
         <picture>
           <source
             media="(max-width: 768px)"
-            srcSet="/images/puhas-tuus-banner-mobile-768x1024.webp"
+            srcSet="/images/kolibri-banner-mobile-768x1024.webp"
           />
           <img
             className="hero-image"
-            src="/images/puhas-tuus-banner-1920x800.webp"
+            src="/images/kolibri-banner-1920x800.webp"
             alt=""
             width="1920"
             height="800"

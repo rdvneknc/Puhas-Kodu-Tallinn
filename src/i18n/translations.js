@@ -37,7 +37,7 @@ export const translations = {
     homeAbout: {
       eyebrow: "Meist",
       title: "Puhas maja, meeldiv elukeskkond.",
-      text: "Puhas Tuus OÜ pakub professionaalset koristusteenust kortermajadele ja ettevõtetele üle Tallinna. Keskendume trepikodadele ja üldruumidele — et elanikud ja külastajad astuksid iga päev hoolitsetud ruumi.",
+      text: "Kolibri Koristusteenused pakub professionaalset koristusteenust kortermajadele ja ettevõtetele üle Tallinna. Keskendume trepikodadele ja üldruumidele — et elanikud ja külastajad astuksid iga päev hoolitsetud ruumi.",
       cta: "Lugege lähemalt",
     },
     process: {
@@ -86,7 +86,7 @@ export const translations = {
     aboutPage: {
       eyebrow: "Meist",
       title: "Puhas maja, meeldiv elukeskkond.",
-      subtitle: "Puhas Tuus OÜ pakub professionaalset koristusteenust kortermajadele ja ettevõtetele üle Tallinna.",
+      subtitle: "Kolibri Koristusteenused pakub professionaalset koristusteenust kortermajadele ja ettevõtetele üle Tallinna.",
       whoTitle: "Kes me oleme",
       whoP1:
         "Oleme Tallinnas tegutsev koristusettevõte, mis keskendub trepikodadele ja üldruumidele. Meie eesmärk on lihtne: ühisruumid, mis tunduvad hoolitsetud — iga päev, mitte ainult kontrollpäeval.",
@@ -262,7 +262,7 @@ export const translations = {
     homeAbout: {
       eyebrow: "About us",
       title: "A cleaner environment for a better everyday life.",
-      text: "Puhas Tuus OÜ provides professional cleaning services for apartment buildings and businesses across Tallinn. We focus on stairwells and common areas — so residents and visitors step into spaces that feel cared for, every day.",
+      text: "Kolibri Koristusteenused provides professional cleaning services for apartment buildings and businesses across Tallinn. We focus on stairwells and common areas — so residents and visitors step into spaces that feel cared for, every day.",
       cta: "Read more",
     },
     process: {
@@ -311,7 +311,7 @@ export const translations = {
     aboutPage: {
       eyebrow: "About us",
       title: "A cleaner environment for a better everyday life.",
-      subtitle: "Puhas Tuus OÜ provides professional cleaning services for apartment buildings and businesses across Tallinn.",
+      subtitle: "Kolibri Koristusteenused provides professional cleaning services for apartment buildings and businesses across Tallinn.",
       whoTitle: "Who we are",
       whoP1:
         "We are a Tallinn-based cleaning company focused on stairwells and common areas. Our goal is simple: shared spaces that feel cared for — every day, not only on inspection day.",

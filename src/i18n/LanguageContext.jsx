@@ -2,7 +2,7 @@ import { createContext, useContext, useEffect, useMemo, useState } from "react";
 import { translations } from "./translations.js";
 
 const LanguageContext = createContext(null);
-const STORAGE_KEY = "puhas-tuus-lang";
+const STORAGE_KEY = "kolibri-koristusteenused-lang";
 
 function getInitialLang() {
   try {

@@ -26,8 +26,8 @@ export default function ContactPage() {
   const contactItems = [
     {
       label: c.email,
-      value: "info@puhastus.ee",
-      href: "mailto:info@puhastus.ee",
+      value: "info@kolibrikoristus.ee",
+      href: "mailto:info@kolibrikoristus.ee",
       icon: (
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
           <rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" strokeWidth="2" />
@@ -76,9 +76,9 @@ export default function ContactPage() {
     e.preventDefault();
     const subject = encodeURIComponent(`Quote request — ${form.service || "cleaning"}`);
     const body = encodeURIComponent(
-      `Hello Puhas Tuus,\n\nName: ${form.name}\nEmail: ${form.email}\nPhone: ${form.phone}\nService: ${form.service || "—"}\nLocation: ${form.location || "—"}\n\nMessage:\n${form.message || "—"}\n\nThank you.`
+      `Hello Kolibri Koristusteenused,\n\nName: ${form.name}\nEmail: ${form.email}\nPhone: ${form.phone}\nService: ${form.service || "—"}\nLocation: ${form.location || "—"}\n\nMessage:\n${form.message || "—"}\n\nThank you.`
     );
-    window.location.href = `mailto:info@puhastus.ee?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:info@kolibrikoristus.ee?subject=${subject}&body=${body}`;
   };
 
   return (

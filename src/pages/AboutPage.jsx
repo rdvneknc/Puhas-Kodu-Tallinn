@@ -34,7 +34,7 @@ export default function AboutPage() {
           <MediaImage
             className="about-page-media"
             src={IMAGES.aboutStory}
-            alt="Puhas Tuus"
+            alt="Kolibri Koristusteenused"
           />
         </div>
       </section>
